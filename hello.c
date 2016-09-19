@@ -4,13 +4,15 @@
 
 MODULE_LICENSE("GPL");
 
-static int hello_horld_init(void) {
-    printk(KERN_INFO "Hello horld\n");
-    return 0;
+static int hello_horld_init(void)
+{
+	printk(KERN_INFO "Hello horld\n");
+	return 0;
 }
 
-static void hello_horld_exit(void) {
-    printk(KERN_INFO "Goodbye horld\n");
+static void hello_horld_exit(void)
+{
+	printk(KERN_INFO "Goodbye horld\n");
 }
 
 module_init(hello_horld_init);
